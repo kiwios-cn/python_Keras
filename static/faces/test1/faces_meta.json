@@ -1,0 +1,254 @@
+[
+  {
+    "frame_idx": 96,
+    "face_idx": 0,
+    "bbox": [
+      578,
+      118,
+      652,
+      192
+    ],
+    "confidence": 0.6554412245750427,
+    "image_url": "/static/faces/test1/face_0096_0.jpg"
+  },
+  {
+    "frame_idx": 118,
+    "face_idx": 0,
+    "bbox": [
+      474,
+      225,
+      543,
+      294
+    ],
+    "confidence": 0.7431554794311523,
+    "image_url": "/static/faces/test1/face_0118_0.jpg"
+  },
+  {
+    "frame_idx": 118,
+    "face_idx": 1,
+    "bbox": [
+      580,
+      222,
+      648,
+      289
+    ],
+    "confidence": 0.6367879509925842,
+    "image_url": "/static/faces/test1/face_0118_1.jpg"
+  },
+  {
+    "frame_idx": 120,
+    "face_idx": 0,
+    "bbox": [
+      503,
+      247,
+      563,
+      307
+    ],
+    "confidence": 0.6186527013778687,
+    "image_url": "/static/faces/test1/face_0120_0.jpg"
+  },
+  {
+    "frame_idx": 136,
+    "face_idx": 0,
+    "bbox": [
+      637,
+      254,
+      698,
+      315
+    ],
+    "confidence": 0.6491518020629883,
+    "image_url": "/static/faces/test1/face_0136_0.jpg"
+  },
+  {
+    "frame_idx": 162,
+    "face_idx": 0,
+    "bbox": [
+      692,
+      275,
+      751,
+      334
+    ],
+    "confidence": 0.6357644200325012,
+    "image_url": "/static/faces/test1/face_0162_0.jpg"
+  },
+  {
+    "frame_idx": 223,
+    "face_idx": 0,
+    "bbox": [
+      633,
+      288,
+      699,
+      354
+    ],
+    "confidence": 0.7175006866455078,
+    "image_url": "/static/faces/test1/face_0223_0.jpg"
+  },
+  {
+    "frame_idx": 224,
+    "face_idx": 1,
+    "bbox": [
+      721,
+      302,
+      780,
+      361
+    ],
+    "confidence": 0.6402103900909424,
+    "image_url": "/static/faces/test1/face_0224_1.jpg"
+  },
+  {
+    "frame_idx": 247,
+    "face_idx": 1,
+    "bbox": [
+      841,
+      375,
+      921,
+      455
+    ],
+    "confidence": 0.6095784902572632,
+    "image_url": "/static/faces/test1/face_0247_1.jpg"
+  },
+  {
+    "frame_idx": 267,
+    "face_idx": 1,
+    "bbox": [
+      525,
+      327,
+      588,
+      390
+    ],
+    "confidence": 0.6012700200080872,
+    "image_url": "/static/faces/test1/face_0267_1.jpg"
+  },
+  {
+    "frame_idx": 334,
+    "face_idx": 1,
+    "bbox": [
+      494,
+      292,
+      576,
+      374
+    ],
+    "confidence": 0.6392437219619751,
+    "image_url": "/static/faces/test1/face_0334_1.jpg"
+  },
+  {
+    "frame_idx": 336,
+    "face_idx": 0,
+    "bbox": [
+      740,
+      277,
+      803,
+      340
+    ],
+    "confidence": 0.6557687520980835,
+    "image_url": "/static/faces/test1/face_0336_0.jpg"
+  },
+  {
+    "frame_idx": 337,
+    "face_idx": 1,
+    "bbox": [
+      370,
+      329,
+      434,
+      393
+    ],
+    "confidence": 0.6141307353973389,
+    "image_url": "/static/faces/test1/face_0337_1.jpg"
+  },
+  {
+    "frame_idx": 351,
+    "face_idx": 0,
+    "bbox": [
+      343,
+      229,
+      403,
+      289
+    ],
+    "confidence": 0.6565595269203186,
+    "image_url": "/static/faces/test1/face_0351_0.jpg"
+  },
+  {
+    "frame_idx": 358,
+    "face_idx": 0,
+    "bbox": [
+      529,
+      274,
+      596,
+      341
+    ],
+    "confidence": 0.6309049725532532,
+    "image_url": "/static/faces/test1/face_0358_0.jpg"
+  },
+  {
+    "frame_idx": 364,
+    "face_idx": 0,
+    "bbox": [
+      797,
+      248,
+      865,
+      316
+    ],
+    "confidence": 0.630266547203064,
+    "image_url": "/static/faces/test1/face_0364_0.jpg"
+  },
+  {
+    "frame_idx": 372,
+    "face_idx": 0,
+    "bbox": [
+      843,
+      245,
+      919,
+      321
+    ],
+    "confidence": 0.7374842762947083,
+    "image_url": "/static/faces/test1/face_0372_0.jpg"
+  },
+  {
+    "frame_idx": 381,
+    "face_idx": 0,
+    "bbox": [
+      867,
+      532,
+      951,
+      616
+    ],
+    "confidence": 0.6268005967140198,
+    "image_url": "/static/faces/test1/face_0381_0.jpg"
+  },
+  {
+    "frame_idx": 396,
+    "face_idx": 0,
+    "bbox": [
+      870,
+      266,
+      949,
+      345
+    ],
+    "confidence": 0.7084928750991821,
+    "image_url": "/static/faces/test1/face_0396_0.jpg"
+  },
+  {
+    "frame_idx": 413,
+    "face_idx": 0,
+    "bbox": [
+      762,
+      294,
+      837,
+      369
+    ],
+    "confidence": 0.6407879590988159,
+    "image_url": "/static/faces/test1/face_0413_0.jpg"
+  },
+  {
+    "frame_idx": 427,
+    "face_idx": 0,
+    "bbox": [
+      892,
+      322,
+      977,
+      407
+    ],
+    "confidence": 0.6042033433914185,
+    "image_url": "/static/faces/test1/face_0427_0.jpg"
+  }
+]

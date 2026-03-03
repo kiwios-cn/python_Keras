@@ -1,0 +1,50 @@
+[
+  {
+    "frame_idx": 0,
+    "face_idx": 4,
+    "bbox": [
+      701,
+      575,
+      805,
+      695
+    ],
+    "confidence": 0.7728832364082336,
+    "image_url": "/static/faces/855564-hd_1920_1080_24fps/face_0000_4.jpg"
+  },
+  {
+    "frame_idx": 0,
+    "face_idx": 1,
+    "bbox": [
+      1477,
+      507,
+      1551,
+      601
+    ],
+    "confidence": 0.8834899663925171,
+    "image_url": "/static/faces/855564-hd_1920_1080_24fps/face_0000_1.jpg"
+  },
+  {
+    "frame_idx": 20,
+    "face_idx": 4,
+    "bbox": [
+      974,
+      523,
+      1055,
+      655
+    ],
+    "confidence": 0.788098931312561,
+    "image_url": "/static/faces/855564-hd_1920_1080_24fps/face_0020_4.jpg"
+  },
+  {
+    "frame_idx": 45,
+    "face_idx": 4,
+    "bbox": [
+      1779,
+      509,
+      1833,
+      587
+    ],
+    "confidence": 0.787539005279541,
+    "image_url": "/static/faces/855564-hd_1920_1080_24fps/face_0045_4.jpg"
+  }
+]

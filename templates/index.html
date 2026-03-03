@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI 行为分析系统</title>
+    <style>
+        body { font-family: sans-serif; background: #0d1117; color: #c9d1d9; text-align: center; }
+        .dashboard { max-width: 1000px; margin: 50px auto; background: #161b22; padding: 30px; border-radius: 12px; }
+        .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin: 20px 0; }
+        .stat-card { background: #21262d; padding: 15px; border-radius: 8px; border-bottom: 3px solid #58a6ff; }
+        .danger { border-bottom-color: #f85149; }
+        video { width: 100%; border-radius: 10px; display: none; margin-top: 20px; }
+        button { background: #238636; color: white; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; }
+        .face-section { margin-top: 20px; text-align: left; }
+        .face-section h3 { margin-bottom: 10px; }
+        .face-gallery { display: flex; flex-wrap: wrap; gap: 10px; }
+        .face-card { background: #21262d; border-radius: 6px; overflow: hidden; text-align: center; }
+        .face-card img { width: 90px; height: 90px; object-fit: cover; display: block; }
+        .face-card span { display: block; font-size: 11px; color: #8b949e; padding: 4px 0; }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <h1>🔍 人流密集路口识别</h1>
+        <input type="file" id="vidInput" accept="video/*">
+        <button onclick="startAnalysis()">开始深度分析</button>
+        <p id="loading" style="display:none;">正在解析骨架与行为特征，请稍候...</p>
+        <div id="results" style="display:none;">
+            <div class="stats-grid">
+                <div class="stat-card"><h3>总人数</h3><div id="res_p">0</div></div>
+                <div class="stat-card"><h3>抬头/低头比例</h3><div id="res_head">--</div></div>
+                <div class="stat-card danger"><h3>检测到奔跑</h3><div id="res_run">--</div></div>
+                <div class="stat-card danger"><h3>检测到摔跤</h3><div id="res_fall">--</div></div>
+            </div>
+            <video id="res_video" controls></video>
+            <div class="face-section" id="faceSection" style="display:none;">
+                <h3>👤 识别人员（共 <span id="faceCount">0</span> 人）</h3>
+                <div class="face-gallery" id="faceGallery"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function startAnalysis() {
+            const file = document.getElementById('vidInput').files[0];
+            if (!file) return alert("请选择视频文件");
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('results').style.display = 'none';
+
+            const formData = new FormData();
+            formData.append('video', file);
+            fetch('/upload', { method: 'POST', body: formData })
+                .then(r => r.json())
+                .then(data => {
+                    document.getElementById('loading').style.display = 'none';
+                    document.getElementById('results').style.display = 'block';
+
+                    // 修复：用 total_faces 显示总人数
+                    document.getElementById('res_p').innerText = data.total_faces;
+
+                    const total = data.up_frames + data.down_frames;
+                    document.getElementById('res_head').innerText = total > 0
+                        ? `${Math.round(data.up_frames / total * 100)}% 抬头`
+                        : '--';
+                    document.getElementById('res_run').innerText = data.run_detected;
+                    document.getElementById('res_fall').innerText = data.fall_detected;
+
+                    const v = document.getElementById('res_video');
+                    v.src = data.video_url;
+                    v.style.display = 'block';
+
+                    const faces = data.faces || [];
+                    if (faces.length > 0) {
+                        document.getElementById('faceCount').innerText = faces.length;
+                        const gallery = document.getElementById('faceGallery');
+                        gallery.innerHTML = '';
+                        faces.forEach((f, i) => {
+                            gallery.innerHTML += `
+                                <div class="face-card">
+                                    <img src="${f.image_url}" alt="人员${i+1}">
+                                    <span>人员 ${i+1}</span>
+                                </div>`;
+                        });
+                        document.getElementById('faceSection').style.display = 'block';
+                    }
+                })
+                .catch(err => {
+                    document.getElementById('loading').style.display = 'none';
+                    alert('分析失败：' + err);
+                });
+        }
+    </script>
+</body>
+</html>

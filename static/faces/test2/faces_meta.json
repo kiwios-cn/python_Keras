@@ -1,0 +1,14 @@
+[
+  {
+    "frame_idx": 605,
+    "face_idx": 0,
+    "bbox": [
+      164,
+      463,
+      256,
+      555
+    ],
+    "confidence": 0.6502158045768738,
+    "image_url": "/static/faces/test2/face_0605_0.jpg"
+  }
+]

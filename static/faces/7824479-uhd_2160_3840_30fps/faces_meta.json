@@ -1,0 +1,98 @@
+[
+  {
+    "frame_idx": 0,
+    "face_idx": 1,
+    "bbox": [
+      1381,
+      1207,
+      1588,
+      1479
+    ],
+    "confidence": 0.8169025182723999,
+    "image_url": "/static/faces/7824479-uhd_2160_3840_30fps/face_0000_1.jpg"
+  },
+  {
+    "frame_idx": 0,
+    "face_idx": 0,
+    "bbox": [
+      799,
+      956,
+      988,
+      1196
+    ],
+    "confidence": 0.9100050926208496,
+    "image_url": "/static/faces/7824479-uhd_2160_3840_30fps/face_0000_0.jpg"
+  },
+  {
+    "frame_idx": 20,
+    "face_idx": 0,
+    "bbox": [
+      930,
+      915,
+      1136,
+      1174
+    ],
+    "confidence": 0.8750463128089905,
+    "image_url": "/static/faces/7824479-uhd_2160_3840_30fps/face_0020_0.jpg"
+  },
+  {
+    "frame_idx": 45,
+    "face_idx": 2,
+    "bbox": [
+      164,
+      1423,
+      223,
+      1526
+    ],
+    "confidence": 0.6139712333679199,
+    "image_url": "/static/faces/7824479-uhd_2160_3840_30fps/face_0045_2.jpg"
+  },
+  {
+    "frame_idx": 55,
+    "face_idx": 2,
+    "bbox": [
+      109,
+      1423,
+      166,
+      1515
+    ],
+    "confidence": 0.5083938837051392,
+    "image_url": "/static/faces/7824479-uhd_2160_3840_30fps/face_0055_2.jpg"
+  },
+  {
+    "frame_idx": 70,
+    "face_idx": 1,
+    "bbox": [
+      1430,
+      1061,
+      1653,
+      1374
+    ],
+    "confidence": 0.8334452509880066,
+    "image_url": "/static/faces/7824479-uhd_2160_3840_30fps/face_0070_1.jpg"
+  },
+  {
+    "frame_idx": 75,
+    "face_idx": 2,
+    "bbox": [
+      97,
+      1299,
+      182,
+      1423
+    ],
+    "confidence": 0.5499187111854553,
+    "image_url": "/static/faces/7824479-uhd_2160_3840_30fps/face_0075_2.jpg"
+  },
+  {
+    "frame_idx": 85,
+    "face_idx": 0,
+    "bbox": [
+      713,
+      765,
+      973,
+      1111
+    ],
+    "confidence": 0.8954732418060303,
+    "image_url": "/static/faces/7824479-uhd_2160_3840_30fps/face_0085_0.jpg"
+  }
+]
